@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index",
+    "build": "babel src/index.js -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +14,10 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5"
   }
 }
