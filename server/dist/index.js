@@ -63,7 +63,7 @@ app.get("/get/all", /*#__PURE__*/function () {
           _context2.prev = 7;
           _context2.t0 = _context2["catch"](0);
           res.json({
-            err: _context2.t0
+            err: " an error occuring is ".concat(_context2.t0)
           });
         case 10:
         case "end":

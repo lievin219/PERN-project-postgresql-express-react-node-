@@ -29,7 +29,7 @@ app.get("/get/all",async(req,res)=>{
              res.status(200).json(alltodos.rows)
       }
       catch(err){
- res.json({err})
+ res.json({err:` an error occuring is ${err}`})
       }
 })
 
