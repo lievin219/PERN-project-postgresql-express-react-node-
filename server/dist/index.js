@@ -44,6 +44,7 @@ app.post('/todos', /*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }());
+// my database:postgres://pern_project_user:86RDbnqs1slAj0nteg2XFqlhi6NmaT5R@dpg-cp3lmjnsc6pc73frfdlg-a/pern_project
 // get all todo;
 app.get("/get/all", /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(req, res) {
