@@ -22,6 +22,7 @@ catch(err){
 
 }
  })
+ // my database:postgres://pern_project_user:86RDbnqs1slAj0nteg2XFqlhi6NmaT5R@dpg-cp3lmjnsc6pc73frfdlg-a/pern_project
 // get all todo;
 app.get("/get/all",async(req,res)=>{
       try{
