@@ -83,3 +83,9 @@ app.listen(porti,()=>{
     console.log(` server has started   running on port 0f${porti}`)
 })
 
+
+//username:pern_app_erjf_user
+//port:5432
+//host:dpg-cp5m5uocmk4c73f4sphg-a
+//password:0Rxs968yUFusEqjoJ3FEhv21ElLCDBf7
+//database:pern_app_erjf
