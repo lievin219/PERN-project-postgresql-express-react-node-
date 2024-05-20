@@ -8,13 +8,14 @@ var express = require('express');
 var database = require('./data');
 var cors = require('cors');
 var pool = require('./data');
+require("dotenv").config();
 var app = express();
 //middle ware services
 app.use(cors());
 app.use(express.json());
 //routes down here!
 //create a todo;
-
+var porti = process.env.PORT;
 app.post('/todos', /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(req, res) {
     var description, newtodo;
@@ -165,6 +166,6 @@ app["delete"]("/delete/:id", /*#__PURE__*/function () {
     return _ref5.apply(this, arguments);
   };
 }());
-app.listen(5000, function () {
-  console.log(' server has started   running on port 0f 5000');
+app.listen(porti, function () {
+  console.log(" server has started   running on port 0f".concat(porti));
 });

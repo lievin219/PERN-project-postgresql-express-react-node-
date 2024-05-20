@@ -2,12 +2,14 @@ const express=require('express')
 const database=require('./data')
 const cors=require('cors')
 const pool = require('./data')
+require("dotenv").config();
 const app=express()
 //middle ware services
 app.use(cors())
 app.use(express.json())
 //routes down here!
 //create a todo;
+const porti=process.env.PORT
 
  app.post('/todos',async(req,res)=>{
      try{
@@ -77,7 +79,7 @@ app.delete("/delete/:id",async(req,res)=>{
    }
 })
 
-app.listen(5000,()=>{
-    console.log(' server has started   running on port 0f 5000')
+app.listen(porti,()=>{
+    console.log(` server has started   running on port 0f${porti}`)
 })
 
